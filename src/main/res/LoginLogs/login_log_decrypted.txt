@@ -1,0 +1,13 @@
+Login Succeeded user: user Time: 2025-05-15T19:10:24.859305
+Login Succeeded user: user Time: 2025-05-15T19:12:06.351494500
+Login Succeeded user: user Time: 2025-05-15T19:14:03.024854200
+Login Succeeded user: user Time: 2025-05-15T19:15:11.748648700
+Login Succeeded user: user Time: 2025-05-15T19:23:21.536886900
+Login Succeeded user: user Time: 2025-05-15T19:26:14.761848
+Login Succeeded user: user Time: 2025-05-15T19:55:04.746786800
+Login Failed attempted user: admin Time: 2025-05-15T21:14:53.886448100
+Login Failed attempted user: admin Time: 2025-05-15T21:16:05.537983700
+Login Failed attempted user: admin Time: 2025-05-15T21:18:01.496152800
+Login Failed attempted user: ffe Time: 2025-05-15T21:21:46.249146400
+Login Failed attempted user: ffe Time: 2025-05-15T21:22:01.879065
+Login Failed attempted user: admin Time: 2025-05-15T21:22:46.720920100

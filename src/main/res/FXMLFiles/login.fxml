@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="288.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pythonandjava.MainController">
+
+    <children>
+        <Rectangle height="67.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="584.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3933649289099526" startY="0.5971563981042654">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48240742087364197" green="0.2777777910232544" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18619999289512634" green="0.5812100172042847" blue="0.9800000190734863" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+
+        <Button fx:id="loginButton" layoutX="116.0" layoutY="198.0" mnemonicParsing="false" onAction="#Login" onMouseEntered="#LoginHover" onMouseExited="#LoginExit" text="login">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+
+        <TextField fx:id="txtUserName" layoutX="38.0" layoutY="85.0" promptText="username">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+
+        <PasswordField fx:id="txtPassword" layoutX="38.0" layoutY="136.0" promptText="password">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+
+        <Label fx:id="idStatus" layoutX="38.0" layoutY="15.0" prefHeight="50.0" prefWidth="264.0" text="status">
+            <font>
+                <Font name="SansSerif Bold" size="26.0" />
+            </font>
+        </Label>
+
+        <ImageView fitHeight="55.0" fitWidth="56.0" layoutX="514.0" layoutY="6.0">
+            <image>
+                <Image url="@../../../../../../Desktop/programin/NMIcon.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="TrustQuotes" layoutX="276.0" layoutY="79.0" prefHeight="115.0" prefWidth="288.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

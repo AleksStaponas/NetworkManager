@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="394.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLFiles.TOS">
+   <children>
+      <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="361.0" prefWidth="348.0" text="TERMS AND CONDITIONS&#10;&#10;Welcome to our application. By using this software, you &#10;agree to the following terms and conditions:&#10;&#10;1.Acceptance of Terms&#10; By accessing or using this application, you agree to be&#10; bound by these terms.&#10;&#10;2.User Responsibility&#10; You are solely responsible for any activity that occurs &#10; under your account or device.&#10;&#10;3.Prohibited Activities&#10; You agree not to misuse the software, attempt &#10; unauthorized access, or reverse-engineer any part of it.&#10;&#10;4.Data Usage&#10; This app may log anonymized usage data for performance &#10; and security purposes. No personal information will be&#10; shared without your consent.&#10;&#10;5.Limitation of Liability&#10; We are not liable for any damages or losses resulting from&#10; your use or misuse of the application.&#10;&#10;6.Termination&#10; We reserve the right to suspend or terminate access to the&#10; application at any time without notice if terms are violated.&#10;&#10;7.Modifications&#10; These terms may be updated periodically. Continued use &#10; of the app indicates acceptance of any changes.&#10;&#10;If you do not agree to these terms, you may not use the &#10;application.&#10;&#10;" />
+      <CheckBox layoutX="371.0" layoutY="314.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="276.0" text="I read and agree to these terms and conditions" />
+      <Button alignment="CENTER" layoutX="371.0" layoutY="343.0" mnemonicParsing="false" text="Submit " />
+      <Button alignment="CENTER" layoutX="598.0" layoutY="343.0" mnemonicParsing="false" text="Exit" />
+      <PieChart layoutX="371.0" layoutY="33.0" prefHeight="270.0" prefWidth="254.0" title="Cyber attacks prevented">
+         <effect>
+            <Bloom />
+         </effect>
+      </PieChart>
+      <Circle fill="#ff311f" layoutX="507.0" layoutY="188.0" radius="120.0" stroke="WHITE" strokeType="INSIDE" />
+      <Arc fill="#5bff8f" layoutX="506.0" layoutY="187.0" length="270.0" radiusX="119.0" radiusY="122.0" startAngle="45.0" stroke="WHITE" strokeType="INSIDE" type="ROUND" />
+   </children>
+</AnchorPane>

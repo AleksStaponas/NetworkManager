@@ -1,0 +1,20 @@
+create the table
+
+CREATE TABLE userInfo
+(
+  ID TEXT,
+  PASSWORD TEXT,
+  TERMS BOOLEAN NOT NULL DEFAULT False,
+  FIRSTUSE BOOLEAN NOT NULL DEFAULT False
+);
+
+add a user
+
+INSERT INTO userInfo
+VALUES
+(
+    'user',
+	'pass',
+	False,
+	True
+);

@@ -1,3 +1,11 @@
+Network Manager is a program i have developed using:
+
+- **Python** and **Java** for the core logic
+- **CSS** for styling the GUI
+- **SQL** for the database management
+
+This combination allows the app to efficiently manage network operations with a user-friendly interface.
+
 MIT License
 
 Copyright (c) 2025 Aleks Staponas

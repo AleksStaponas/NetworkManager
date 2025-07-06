@@ -17,8 +17,9 @@ This allows the app to efficiently manage network operations with a user-friendl
 - Terms of Service acceptance  
 - Basic JavaFX UI  
 - User authentication  
-- Exit and submit buttons  
+- Button functionality 
 - Python code examples included for simulation only (not fully integrated)
+
 ## In Progress
 
 - Main dashboard interface (under development)  

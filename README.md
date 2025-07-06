@@ -11,6 +11,14 @@ This is a program i have developed using:
 
 This allows the app to efficiently manage network operations with a user-friendly interface.
 
+##Project Screenshots
+
+#Current login page
+![LoginPage](images/LoginPage.JPG)
+
+#Current Terms of service page
+![TOSPage](images/TOSPage.JPG)
+
 ## Features Completed
 
 - User login with encrypted logging  

@@ -1,4 +1,4 @@
-## Ethics & Usage Notice
+# Ethics & Usage Notice
 
 This project includes Python scripts that perform network scans. **Use these tools only on networks you own or have explicit permission to test. Unauthorized scanning can be illegal and unethical.**  
 Please respect privacy and adhere to all applicable laws.
@@ -11,15 +11,19 @@ This is a program i have developed using:
 
 This allows the app to efficiently manage network operations with a user-friendly interface.
 
-## Project Screenshots
+# Project Screenshots
 
-# Current login page
-![LoginPage](images/LoginPage.JPG)
+## Current login page
+<p align="center">
+  <img src="images/LoginPage.JPG" alt="LoginPage" />
+</p>
 
-# Current Terms of service page
-![TOSPage](images/TOSPage.JPG)
+## Current Terms of service page
+<p align="center">
+  <img src="images/TOSPage.JPG" alt="TOSPage" />
+</p>
 
-## Features Completed
+# Features Completed
 
 - User login with encrypted logging  
 - Terms of Service acceptance  
@@ -36,7 +40,7 @@ This allows the app to efficiently manage network operations with a user-friendl
 - Full integration of Python scripts planned  
 - Performance optimizations
 
-MIT License
+## MIT License
 
 Copyright (c) 2025 Aleks Staponas
 

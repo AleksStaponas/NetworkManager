@@ -1,10 +1,31 @@
-Network Manager is a program i have developed using:
+## Ethics & Usage Notice
+
+This project includes Python scripts that perform network scans. **Use these tools only on networks you own or have explicit permission to test. Unauthorized scanning can be illegal and unethical.**  
+Please respect privacy and adhere to all applicable laws.
+
+This is a program i have developed using:
 
 - **Python** and **Java** for the core logic
 - **CSS** for styling the GUI
 - **SQL** for the database management
 
-This combination allows the app to efficiently manage network operations with a user-friendly interface.
+This allows the app to efficiently manage network operations with a user-friendly interface.
+
+## Features Completed
+
+- User login with encrypted logging  
+- Terms of Service acceptance  
+- Basic JavaFX UI  
+- User authentication  
+- Exit and submit buttons  
+- Python code examples included for simulation only (not fully integrated)
+## In Progress
+
+- Main dashboard interface (under development)  
+- advanced scanning features  
+- Improved UI/UX  
+- Full integration of Python scripts planned  
+- Performance optimizations
 
 MIT License
 

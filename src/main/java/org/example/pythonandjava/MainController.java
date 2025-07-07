@@ -74,6 +74,10 @@ public class MainController {
             try (Connection connection = DriverManager.getConnection(URL, USER, PASS)) {
                 System.out.println("Connected to server");
 
+                //Vulnerable to sql injections
+                //example to login without password 1' OR 1=1 -- 
+                //This injection allows you to log in as long as 1 = 1 which is unconditionally true
+                
                 String sql = "SELECT * FROM userinfo WHERE Id = '" + id + "' AND password = '" + password + "'";
                 Statement stmt = connection.createStatement();
                 ResultSet rs = stmt.executeQuery(sql);

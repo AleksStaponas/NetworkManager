@@ -39,3 +39,7 @@ This allows the app to efficiently manage network operations with a user-friendl
 - Improved UI/UX(dashboard)  
 - Full integration of Python scripts planned  
 - Performance optimizations
+
+## Additional Documentation
+
+For more details, check the [Detailed Documentation](Additional_Information.md) page.

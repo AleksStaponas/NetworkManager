@@ -1,4 +1,4 @@
-package org.example.pythonandjava;
+package main.java.pythonandjava;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -45,10 +45,11 @@ public class MainController {
 
     @FXML
     public void Login(ActionEvent event) {
+
         String id = txtUserName.getText();
         String password = txtPassword.getText();
         LocalDateTime time = LocalDateTime.now();
-        String logPath = "C:/PythonAndJava/src/main/res/LoginLogs/login_log.txt";
+        String logPath = "/PythonAndJava/src/main/res/login_log.txt";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(logPath, true))) {
 
@@ -63,7 +64,7 @@ public class MainController {
                     decrypted(
                             "1234567812345678",
                             logPath,
-                            "C:/PythonAndJava/src/main/res/LoginLogs/login_log_decrypted.txt"
+                            "/PythonAndJava/src/main/res/LoginLogs/login_log_decrypted.txt"
                     );
                 } else {
                     System.out.println("Not a valid option");
@@ -73,14 +74,11 @@ public class MainController {
 
             try (Connection connection = DriverManager.getConnection(URL, USER, PASS)) {
                 System.out.println("Connected to server");
-
-                //Vulnerable to sql injections
-                //example to login without password 1' OR 1=1 -- 
-                //This injection allows you to log in as long as 1 = 1 which is unconditionally true
                 
-                String sql = "SELECT * FROM userinfo WHERE Id = '" + id + "' AND password = '" + password + "'";
-                Statement stmt = connection.createStatement();
-                ResultSet rs = stmt.executeQuery(sql);
+                String sql = "SELECT * FROM userinfo WHERE Id = ? AND password = ?";
+                Statement stmt = connection.createStatement(sql);
+                stmt.setString(1, id);
+                stmt.setString(2, password);
 
                 if (rs.next()) {
                     bw.write("Login Succeeded user: " + id + " Time: " + time);
@@ -106,7 +104,7 @@ public class MainController {
             encryptedFile(
                     "1234567812345678",
                     logPath,
-                    "C:/PythonAndJava/src/main/res/LoginLogs/login_log_encrypted.txt"
+                    "/PythonAndJava/src/main/res/Logs/login_log_encrypted.txt"
             );
 
         } catch (IOException e) {
@@ -119,7 +117,7 @@ public class MainController {
 
     private void openMainWindow() {
         try {
-            FXMLLoader loader = new FXMLLoader(Paths.get("C:/PythonAndJava/src/main/res/FXMLFiles/main.fxml").toUri().toURL());
+            FXMLLoader loader = new FXMLLoader(Paths.get("/PythonAndJava/src/main/res/FXMLFiles/main.fxml").toUri().toURL());
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Main Window");
@@ -142,7 +140,7 @@ public class MainController {
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.DECRYPT_MODE, key);
 
-        File fileInput = new File("C:/PythonAndJava/src/main/res/LoginLogs/login_log_encrypted.txt");
+        File fileInput = new File("/PythonAndJava/src/main/res/Logs/login_log_encrypted.txt");
         byte[] inputBytes = new byte[(int) fileInput.length()];
         try (FileInputStream inputStream = new FileInputStream(fileInput)) {
             inputStream.read(inputBytes);

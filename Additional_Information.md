@@ -5,12 +5,12 @@ This Network Manager monitors and manages devices on your local network.
 It includes:
 - Scheduled background network scanning
 - Device discovery and logging
-- Planned GUI integration for visualization and management
+- GUI-focused architecture for management and visualization
 
 ---
 
 ## Features
-- Multi-threaded IP scanning (`192.168.1.1` to `192.168.1.254`)
+- Multi-threaded IP scanning (`192.168.1.1` to `192.168.1.254`) with planned network compatibility
 - Detects reachable hosts using ICMP(Internet Control Message Protocol)
 - Appends discovered devices to a persistent log file
 - Runs as a background service every 20 minutes(planned development)
@@ -27,7 +27,7 @@ It includes:
 
 # Flowcharts
 This section shows flowcharts to help explain how the program works.
-## Network Scanner 
+## Network Device Scanner 
 This network manager scans your local subnet for active devices using multi‑threaded ping requests.
 Reachable devices are logged for easy monitoring and can be used by the GUI for real‑time updates(in progress).
 <p align="center">
@@ -35,7 +35,7 @@ Reachable devices are logged for easy monitoring and can be used by the GUI for 
 </p>
 
 ## Known Issues & Vulnerabilities
-- **Minor SQL Injection Risk** – Affects planned database integration; will be fixed in the next update.
+- **Minor SQL Injection Risk** – Affects planned database integration; will be fixed in the next update.(Patched)
 - **ICMP Ping Limitations** – Some devices may block `isReachable()`, causing false negatives.
 - **Hardcoded Subnet** – Currently scans only `192.168.1.x`; customization is planned.
 - **Non-synchronized Logging** – Concurrent threads may occasionally write to the log file at the same time.

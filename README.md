@@ -13,14 +13,22 @@ This allows the app to efficiently manage network operations with a user-friendl
 
 # Project Screenshots
 
-## Current login page
-<p align="center">
-  <img src="images/LoginPage.JPG" alt="LoginPage" />
-</p>
-
 ## Current Terms of service page
 <p align="center">
-  <img src="images/TOSPage.JPG" alt="TOSPage" />
+  <img src="images/snapshots/TOSPage.JPG" alt="TOSPage" />
+</p>
+
+## Current login page
+<p align="center">
+  <img src="images/snapshots/LoginPage.JPG" alt="LoginPage" />
+</p>
+
+## Login page redesign
+This is a **in-development redesign** aimed at making the login experience more modern and appealing.  
+Suggestions and recommendations are welcome!
+
+<p align="center">
+  <img src="images/snapshots/NewLoginPage.JPG" alt="LoginPageRedesign" />
 </p>
 
 # Features Completed

@@ -35,7 +35,6 @@ Reachable devices are logged for easy monitoring and can be used by the GUI for 
 </p>
 
 ## Known Issues & Vulnerabilities
-- **Minor SQL Injection Risk** – Affects planned database integration; will be fixed in the next update.(Patched)
 - **ICMP Ping Limitations** – Some devices may block `isReachable()`, causing false negatives.
 - **Hardcoded Subnet** – Currently scans only `192.168.1.x`; customization is planned.
-- **Non-synchronized Logging** – Concurrent threads may occasionally write to the log file at the same time.
+- **Non-synchronized Logging** – Concurrent threads may occasionally write to the log file at the same time.(rare possibility)

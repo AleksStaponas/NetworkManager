@@ -1,3 +1,4 @@
+
 # Ethics & Usage Notice
 
 This project includes Python scripts that perform network scans. **Use these tools only on networks you own or have explicit permission to test. Unauthorized scanning can be illegal and unethical.**  
@@ -23,7 +24,8 @@ This allows the app to efficiently manage network operations with a user-friendl
 ## In Progress
 
 - Main dashboard interface (under development)  
-- advanced scanning features(1/3)  
+- advanced scanning features(1/3)
+- port monitoring  
 - Improved UI/UX(dashboard)  
 - Full integration of Python scripts planned  
 - Performance optimizations
